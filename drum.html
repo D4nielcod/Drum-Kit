@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,500&family=Rubik:wght@600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+
+    body{background-color:#283149; font-family:'Montserrat','Rubik',Arial; margin:0; padding:0; text-align:center;}
+
+    .header{color:#DBEDF3; font-family:"Arvo",Arial; font-size:5rem; text-shadow:3px 0 #DA0463;}
+
+    .set{display:block;}
+
+    .drum{background-repeat:no-repeat; display:inline; font-size:5rem; height:165px; transition:box-shadow 0.8s; width:160px;}
+    .drum:hover{box-shadow:inset 0 0 0 2000px rgba(255, 0, 150, 0.3); transition:box-shadow 0.8s;}
+
+    footer{color:#DBEDF3; margin-top:2%;}
+  </style>
+</head>
+
+<body>
+  <h1 class="header" id="myHeader">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button class="w drum" id="tom1" style="background-image: url('tom1.png');" title="Click W"></button>
+    <button class="a drum" id="tom2" style="background-image: url('tom2.png');" title="Click A"></button>
+    <button class="s drum" id="tom3" style="background-image: url('tom3.png');" title="Click S"></button>
+    <button class="d drum" id="tom4" style="background-image: url('tom4.png');" title="Click D"></button>
+    <button class="j drum" id="crash" style="background-image: url('crash.png');" title="Click J"></button>
+    <button class="k drum" id="kick" style="background-image: url('kick.png');" title="Click K"></button>
+    <button class="l drum" id="snare" style="background-image: url('snare.png');" title="Click L"></button>
+  </div>
+
+  <footer>Made with ❤️ in Ile - Ife.</footer>
+
+  <script src="drum.js"></script>
+</body>
+
+</html>
